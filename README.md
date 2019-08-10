@@ -2,7 +2,7 @@
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZoranPandovski/qtp.io/blob/master/notebooks/VIX_blend.ipynb)
 
-This repository contains examples for:
+This repository contains a boilerplate for:
 
 * Converting [Jupyter notebooks](https://jupyter.org/) to markdown or html
 * Push them to static site generator ([Pelican](http://docs.getpelican.com/en/3.6.3/index.html))
