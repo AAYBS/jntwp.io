@@ -1,4 +1,4 @@
-# qtp.io starter
+# Jupyter Notebooks To Web Page starter
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ZoranPandovski/qtp.io/blob/master/notebooks/VIX_blend.ipynb)
 
