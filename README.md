@@ -14,11 +14,11 @@ To install:
 
 1.Clone this repository:
 ```
-git clone git@github.com:ZoranPandovski/qtp.io.git
+git clone git@github.com:ZoranPandovski/jntwp.io.git
 ```
 2.Create virtual environment and activate it:
 ```
-python3 -m venv qtp
+python3 -m venv jntwp
 source qtp/bin/activate
 ```
 3.Install Python packages into your virtual environment: 
