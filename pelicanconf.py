@@ -2,14 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'zp'
-SITENAME = 'qtp.io'
+AUTHOR = 'Zoran Pandovski'
+SITENAME = 'Web page'
+SITESUBTITLE = u'A boilerplate for converting Jupyter notebooks to static web page'
 SITEURL = ''
-
+#SITESUBURL = '/'
 PATH = 'content'
-
-TIMEZONE = 'Europe/Paris'
-
+TIMEZONE = 'America/Los_Angeles'
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -19,17 +18,51 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+# Set the article URL
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+#MARKUP = ('md', 'ipynb')
+#PLUGINS = ['ipynb.markup']
+
+MARKUP = ['md']
+PLUGIN_PATHS = ['./plugins', './plugins/pelican-plugins']
+PLUGINS = [
+    'summary',       # auto-summarizing articles
+    'feed_summary',  # use summaries for RSS, not full articles
+    'ipynb.liquid',  # for embedding notebooks
+    'liquid_tags.img',  # embedding images
+    'liquid_tags.video',  # embedding videos
+    'liquid_tags.include_code',  # including code blocks
+    'liquid_tags.literal'
+]
+IGNORE_FILES = ['.ipynb_checkpoints']
+
+# for liquid tags
+#CODE_DIR = 'downloads/code'
+#NOTEBOOK_DIR = 'downloads/notebooks'
+
+# THEME SETTINGS
+THEME = './theme/'
+
+ABOUT_PAGE = '/pages/about.html'
+TWITTER_USERNAME = 'your_twitter_name'
+GITHUB_USERNAME = 'your_github_name'
+STACKOVERFLOW_ADDRESS = 'http://stackoverflow.com/users/'
+AUTHOR_WEBSITE = 'your_website'
+SHOW_ARCHIVES = True
+SHOW_FEED = False  # Need to address large feeds
+
+ENABLE_MATHJAX = True
+
+STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
+
+# Footer info
+
+LICENSE_URL = "https://github.com/ZoranPandovski/jntwp.io/blob/master/LICENSE"
+LICENSE = "MIT"
