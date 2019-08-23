@@ -29,6 +29,22 @@ pip install -r requirements.txt
 
 All of the jupyter notebooks that should be converted to pages must be inside `notebooks` directory. 
 
+## Run locally
+
+Run the pelican command to generate site:
+
+```
+pelican content
+```
+Now, the site is generated inside output directory. To launch pelican web server:
+
+```
+cd output
+python -m pelican.server
+```
+Preview the site by navigating to http://localhost:8000/ in your browser.
+
+
 ## Converting notebooks 
 
 Use nbconvert to convert a Jupyter notebook (input) to a a different format (output). The basic command structure is:
