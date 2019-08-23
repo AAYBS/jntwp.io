@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Zoran Pandovski'
-SITENAME = 'Web page'
+SITENAME = 'Web '
 SITESUBTITLE = u'A boilerplate for converting Jupyter notebooks to static web page'
 SITEURL = ''
 #SITESUBURL = '/'
@@ -50,15 +50,15 @@ IGNORE_FILES = ['.ipynb_checkpoints']
 # THEME SETTINGS
 THEME = './theme/'
 
-ABOUT_PAGE = '/pages/about.html'
+ABOUT_PAGE = '/about.html'
 TWITTER_USERNAME = 'your_twitter_name'
 GITHUB_USERNAME = 'your_github_name'
 STACKOVERFLOW_ADDRESS = 'http://stackoverflow.com/users/'
 AUTHOR_WEBSITE = 'your_website'
-SHOW_ARCHIVES = True
+SHOW_ARCHIVES = False
 SHOW_FEED = False  # Need to address large feeds
 
-ENABLE_MATHJAX = True
+#ENABLE_MATHJAX = True
 
 STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 

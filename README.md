@@ -34,12 +34,12 @@ All of the jupyter notebooks that should be converted to pages must be inside `n
 Use nbconvert to convert a Jupyter notebook (input) to a a different format (output). The basic command structure is:
 
 ```
-jupyter nbconvert --to <output format> <input notebook>
+jupyter nbconvert --to <output format> <input notebook> --output <output_dir>
 ```
 The current setup uses markdown so run:
 
 ```
-jupyter nbconvert --to markdown notebooks/mynotebook.ipynb /content
+jupyter nbconvert --to markdown notebooks/mynotebook.ipynb --output /content
 ```
 
 ## Markdown structure
