@@ -14,7 +14,7 @@ To install:
 
 1.Clone this repository:
 ```
-git clone git@github.com:ZoranPandovski/jntwp.io.git
+git clone git@github.com:AAYBS/jntwp.io.git
 ```
 2.Create virtual environment and activate it:
 ```
