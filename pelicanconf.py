@@ -64,5 +64,5 @@ STATIC_PATHS = ['images', 'figures', 'videos', 'downloads', 'favicon.ico']
 
 # Footer info
 
-LICENSE_URL = "https://github.com/ZoranPandovski/jntwp.io/blob/master/LICENSE"
-LICENSE = "MIT"
+LICENSE_URL = 'https://github.com/AAYBS/jntwp.io/blob/master/LICENSE'
+LICENSE = 'MIT'
